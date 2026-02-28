@@ -1,0 +1,10 @@
+require('nvim-treesitter').install({
+    'python',
+    'julia',
+    'supercollider',
+    'cpp',
+    'c',
+    'biblatex',
+    'latex',
+    'faust'
+})

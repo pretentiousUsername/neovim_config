@@ -1,0 +1,6 @@
+require "config.basic_config"
+require "config.lazy"
+require "config.spellcheck"
+require "config.lsp"
+require "keybinds.copy_paste"
+require "keybinds.lazy"
