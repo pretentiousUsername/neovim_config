@@ -1,5 +1,6 @@
 {
   "LuaSnip": { "branch": "master", "commit": "5a1e39223db9a0498024a77b8441169d260c8c25" },
+  "autoclose.nvim": { "branch": "main", "commit": "3f86702b54a861a17d7994b2e32a7c648cb12fb1" },
   "blink.cmp": { "branch": "main", "commit": "4b18c32adef2898f95cdef6192cbd5796c1a332d" },
   "cmp-pandoc.nvim": { "branch": "main", "commit": "30faa4456a7643c4cb02d8fa18438fd484ed7602" },
   "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
@@ -8,6 +9,7 @@
   "lualine.nvim": { "branch": "master", "commit": "47f91c416daef12db467145e16bed5bbfe00add8" },
   "nvim-treesitter": { "branch": "main", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "737cf6c657898d0c697311d79d361288a1343d50" },
+  "oblique-strategies.nvim": { "branch": "main", "commit": "8af87e5544b580f5043fbf4f90ba98d0117e5ee7" },
   "scnvim": { "branch": "main", "commit": "b5beb7f0c6b8143291efcada93dfa25464f32b71" },
   "vim-pandoc": { "branch": "master", "commit": "c31d5c10b29c99cf1a344ae30e2ffa32cf2df743" },
   "vim-pandoc-syntax": { "branch": "master", "commit": "87929100f2497da82f19180ffa49e75a88e7c369" },
