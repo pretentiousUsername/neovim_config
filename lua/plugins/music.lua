@@ -55,5 +55,16 @@ return {
                 scnvim.load_extension('fzf-sc')
             })
         end
+    },
+    {
+        "davidgranstrom/oblique-strategies.nvim",
+        ft = "supercollider",
+        config = {
+            keymaps = {
+                show = {
+                    n = "<F9>",
+                }
+            }
+        }
     }
 }
