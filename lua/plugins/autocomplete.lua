@@ -2,21 +2,13 @@ return {
     {
         'saghen/blink.cmp',
         version = '1.*',
-        -- `main` is untested, please open a PR if you've confirmed it works as expected
-        -- dependencies = {
-        --     {
-        --         'L3MON4D3/LuaSnip',
-        --         version = 'v2.*'
-        --     },
-        --     {
-        --         "rafamadriz/friendly-snippets",
-        --         config = function()
-        --             require("luasnip.loaders.from_vscode").lazy_load()
-        --             require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/LuaSnip/" } })
-        --         end,
-        --     },
-        -- },
         opts = {
+            completion = {
+                documentation = {
+                    auto_show = true,
+                    auto_show_delay_ms = 50,
+                },
+            },
             snippets = { preset = 'luasnip' },
             -- ensure you have the `snippets` source (enabled by default)
             sources = {
@@ -38,30 +30,4 @@ return {
             },
         }
     },
-    -- {
-    --     'saghen/blink.cmp',
-    --     version = '1.*',
-    --     -- `main` is untested, please open a PR if you've confirmed it works as expected
-    --     dependencies = { 'L3MON4D3/LuaSnip', version = 'v2.*' },
-    --     opts = {
-    --         snippets = { preset = 'luasnip' },
-    --         -- ensure you have the `snippets` source (enabled by default)
-    --         sources = {
-    --             default = { 'lsp', 'path', 'snippets', 'buffer' },
-    --         },
-    --     }
-    -- },
-    -- {
-    --     "https://github.com/hrsh7th/cmp-nvim-lua",
-    --     lazy = true,
-    --     ft = "lua",
-    -- },
-    -- {
-    --     'aspeddro/cmp-pandoc.nvim',
-    --     dependencies = {
-    --         'nvim-lua/plenary.nvim',
-    --         'jbyuki/nabla.nvim' -- optional
-    --     },
-    --     ft = { "pandoc", "markdown", "rmd" },
-    -- },
 }

@@ -1,10 +1,10 @@
 return {
     {
-        "https://github.com/nvim-lualine/lualine.nvim",
+        "nvim-lualine/lualine.nvim",
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         opts = {
             icons_enabled = true,
-            theme = "pywal",
+            theme = "pywal16-nvim",
         }
     }
 }
