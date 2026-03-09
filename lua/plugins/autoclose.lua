@@ -10,7 +10,7 @@ return {
                     disabled_filetypes = { "markdown", "text", "pandoc" }
                 },
                 ["$"] = {
-                    escape = false,
+                    escape = true,
                     close = true,
                     pair = "$$",
                     ensabled_filetypes = {"pandoc", "markdown", "latex" }

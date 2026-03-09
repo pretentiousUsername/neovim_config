@@ -30,13 +30,9 @@ vim.lsp.config["pyright"] = {
 }
 
 vim.lsp.config["ruff"] = {
-    cmd = { "ruff", "server" },
     filetypes = { "python" },
     init_options = {
         settings = {
-            pycodestyle = {
-                maxLineLength = 100,
-            },
             showSyntaxErrors = true,
             logLevel = "debug",
         },
@@ -63,5 +59,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 -- enable the LSPs
 -- vim.lsp.enable("lua_ls")
-vim.lsp.enable("pyright")
+-- vim.lsp.enable("pyright")
 vim.lsp.enable("ruff")
