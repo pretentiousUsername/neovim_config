@@ -13,9 +13,11 @@ return {
         lazy = true,
     },
     {
-        "https://github.com/aspeddro/cmp-pandoc.nvim",
+        "aspeddro/cmp-pandoc.nvim",
+        ft = { "md", "markdown", "mdown", "mkd", "mkdn", "pandoc" },
+        lazy = true,
     },
-
-    -- ft = { "md", "markdown", "mdown", "mkd", "mkdn", "pandoc" },
+    -- {
+    --     "https://github.com/aspeddro/cmp-pandoc.nvim",
+    -- },
 }
-

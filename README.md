@@ -11,4 +11,6 @@ ever again, as I have fully embraced NixOS and Neovim (well, I haven't started
 with `home-manager` or flakes yet, so by some metrics I'm not a *true* NixOS
 user).
 
+See [`TODO.md`](TODO.md) for stuff I need to improve on.
+
 [old]: https://github.com/pretentiousUsername/neovimConfigs

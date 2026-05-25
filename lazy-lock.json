@@ -17,6 +17,7 @@
   "nvim-treesitter": { "branch": "main", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "0d7d35fa946837b8738b17c18d1faa1ac351e7f9" },
   "oblique-strategies.nvim": { "branch": "main", "commit": "8af87e5544b580f5043fbf4f90ba98d0117e5ee7" },
+  "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
   "pywal16.nvim": { "branch": "main", "commit": "190cc81189ebcb7a55cb73a936329675394d676f" },
   "scnvim": { "branch": "main", "commit": "ec347b24168ac922de4dcddc181efd2fcdcfa0d0" },
   "vim-pandoc": { "branch": "master", "commit": "c31d5c10b29c99cf1a344ae30e2ffa32cf2df743" },

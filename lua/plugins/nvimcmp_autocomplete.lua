@@ -1,4 +1,15 @@
-local tabmem = require("..utilities.table_membership")
+local function dump(o)
+   if type(o) == 'table' then
+      local s = '{ '
+      for k,v in pairs(o) do
+         if type(k) ~= 'number' then k = '"'..k..'"' end
+         s = s .. '['..k..'] = ' .. dump(v) .. ','
+      end
+      return s .. '} '
+   else
+      return tostring(o)
+   end
+end
 
 return {
     { -- config from https://github.com/folke/lazy.nvim/discussions/2026
@@ -16,6 +27,13 @@ return {
             "L3MON4D3/LuaSnip",
         },
         opts = function()
+            local tabmem = require("..utilities.table_membership")
+            local function is_filetype(entry, ctx, filetype)
+                local kind = vim.bo.filetype
+                if kind == filetype then
+                    return false
+                end
+            end
             -- Set up nvim-cmp.
             local cmp = require("cmp")
             return {
@@ -41,10 +59,14 @@ return {
                 sources = cmp.config.sources(
                     {
                         {name = "luasnip"}, -- For luasnip users.
-                        {name = "nvim_lsp"}
+                        {name = "nvim_lsp"},
+                        { name = "cmp_pandoc" }
                     },
                     {
-                        {name = "buffer"}
+                        { -- not pretty, but it should work
+                            name = "buffer",
+                            entry_filter = function(entry, ctx) is_filetype(entry, ctx, "pandoc") end
+                        },
                     }
                 )
             }
