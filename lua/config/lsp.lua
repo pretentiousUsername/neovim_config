@@ -59,5 +59,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 -- enable the LSPs
 -- vim.lsp.enable("lua_ls")
--- vim.lsp.enable("pyright")
+vim.lsp.enable("pyright")
 vim.lsp.enable("ruff")

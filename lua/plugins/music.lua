@@ -6,7 +6,7 @@ return {
             { 'madskjeldgaard/fzf-sc', lazy = true },
         },
 
-        config = function()
+        opt = function()
             local scnvim = require 'scnvim'
             local map = scnvim.map
             local map_expr = scnvim.map_expr
