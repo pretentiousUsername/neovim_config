@@ -1,6 +1,5 @@
 -- These are plugins that I use for writing, this includes a pandoc plugin,
 -- a TeX plugin, and maybe some other stuff in the future.
-
 return {
     {
         "https://github.com/vim-pandoc/vim-pandoc",
@@ -19,3 +18,4 @@ return {
 
     -- ft = { "md", "markdown", "mdown", "mkd", "mkdn", "pandoc" },
 }
+

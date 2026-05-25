@@ -1,3 +1,5 @@
+local tabmem = require("..utilities.table_membership")
+
 return {
     { -- config from https://github.com/folke/lazy.nvim/discussions/2026
       -- This is essentially for everything but writing.
@@ -7,7 +9,9 @@ return {
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-cmdline",
-             -- For luasnip users.
+            -- pandoc
+            "aspeddro/cmp-pandoc.nvim",
+            -- For luasnip users.
             "saadparwaiz1/cmp_luasnip",
             "L3MON4D3/LuaSnip",
         },
@@ -31,7 +35,7 @@ return {
                         ["<C-f>"] = cmp.mapping.scroll_docs(4),
                         ["<C-Space>"] = cmp.mapping.complete(),
                         ["<C-e>"] = cmp.mapping.abort(),
-                        ["<CR>"] = cmp.mapping.confirm({select = false}) -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+                        ["<Tab>"] = cmp.mapping.confirm({select = false}) -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
                     }
                 ),
                 sources = cmp.config.sources(
