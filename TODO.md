@@ -1,10 +1,9 @@
 + [ ] Replace `vim-pandoc` and `vim-pandoc-syntax`
     + [ ] Add [`render-latex.nvim`][rln]
     + [ ] Add [`render-markdown.nvim`][rmn]
-+ [ ] Make change `nvim-cmp` sources depending on filetype.
-    - This could probably be done using `nvim-cmp`'s options.
-    - A hackier—though likely more reliable way—to do this would be to define
-      different configs for `nvim-cmp` in `lazy`.
++ [ ] Replace `nvim-cmp` with `blink`
+    - It's better and written for modern package managers.
+    - See for example <https://github.com/jmbuhr/cmp-pandoc-references>
 + [ ] Consider replacing `lazy.nvim` with [`vim.pack`][vimpack]
     - Wait until `vim.pack` isn't considered experimental. I'd like for the
       config to be reasonably stable.
