@@ -2,11 +2,11 @@ return {
     { -- scnvim frontend
         'davidgranstrom/scnvim',
         ft = 'supercollider',
-        dependencies = {
-            { 'madskjeldgaard/fzf-sc', lazy = true },
-        },
+        -- dependencies = {
+        --     { 'https://github.com/madskjeldgaard/fzf-sc', lazy = true },
+        -- },
 
-        opt = function()
+        config = function()
             local scnvim = require 'scnvim'
             local map = scnvim.map
             local map_expr = scnvim.map_expr
@@ -52,7 +52,7 @@ return {
                     cmd = 'pandoc',
                 },
 
-                scnvim.load_extension('fzf-sc')
+                -- scnvim.load_extension('fzf-sc')
             })
         end
     },
