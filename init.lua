@@ -1,3 +1,7 @@
+-- Map the `mapleader` key---this was too small to include as its own separate
+-- file.
+vim.g.mapleader = "\\"
+
 require "config.basic_config"
 require "config.lazy"
 require "config.spellcheck"

@@ -37,7 +37,7 @@ return {
                 },
                 postwin = {
                     float = {
-                        enabled = false, -- floating postwin is annoying as shit.
+                        enabled = true, -- nevermind, i like the floating postwindow.
                     },
                 },
                 
