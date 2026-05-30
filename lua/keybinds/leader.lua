@@ -1,0 +1,3 @@
+-- Map the `mapleader` key---I thought this was initially too small to be in its
+-- own file, but it looks like I need to set it in a separate file for some
+-- reason.

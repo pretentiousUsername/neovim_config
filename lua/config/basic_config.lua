@@ -7,3 +7,6 @@ vim.cmd("set tabstop=4 shiftwidth=4 expandtab")  -- use spaces rather than tabs 
 vim.diagnostic.config({
     virtual_text = true,
 })
+
+
+-- <leader>/mapleader is set in `lazy.lua`
