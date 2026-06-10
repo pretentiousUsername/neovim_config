@@ -7,13 +7,14 @@ return {
                     escape = true,
                     close = true,
                     pair = "''",
-                    disabled_filetypes = { "markdown", "text", "pandoc" }
+                    disabled_filetypes = { "markdown", "text", "pandoc" },
+                    enabled_filetypes = { "python", "lua", "c", "c++" },
                 },
                 ["$"] = {
                     escape = true,
                     close = true,
                     pair = "$$",
-                    ensabled_filetypes = {"pandoc", "markdown", "latex" }
+                    enabled_filetypes = {"pandoc", "markdown", "latex" },
                 },
             },
         }
