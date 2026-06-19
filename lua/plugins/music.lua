@@ -20,13 +20,13 @@ return {
                     ['<CR>'] = map('postwin.toggle'),
                     ['<M-CR>'] = map('postwin.toggle', 'i'),
                     ['<M-L>'] = map('postwin.clear', {'n', 'i'}),
-                    ['<C-k>'] = map('signature.show', {'n', 'i'}),
+                    ['<C-M-k>'] = map('signature.show', {'n', 'i'}),
                     ['<F12>'] = map('sclang.hard_stop', {'n', 'x', 'i'}),
                     ['<localleader>st'] = map('sclang.start'),  -- <localleader> is `\` in the `lazy.lua` config file
                     ['<localleader>sk'] = map('sclang.recompile'),
                     ['<F1>'] = map_expr('s.boot'),
                     ['<F2>'] = map_expr('s.mkter'),
-                    ['<M-.'] = map_expr([[CmdPeriod.run]]),--map_expr('CmdPeriod.run'),
+                    ['<M-.>'] = map_expr([[CmdPeriod.run]]), --map_expr('CmdPeriod.run'),
                     ['<M-h>'] = map_expr([[HelpBrowser.new()]]),
                 },
                 
